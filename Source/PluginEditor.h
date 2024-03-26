@@ -17,11 +17,11 @@ using namespace juce;
 /**
 */
 class UniversalCombFilterAudioProcessorEditor  : public juce::AudioProcessorEditor,
-                                      public juce::Slider::Listener,
-                                      public juce::Button::Listener
+                                                 public juce::Slider::Listener,
+                                                 public juce::Button::Listener
 {
 public:
-    UniversalCombFilterAudioProcessorEditor (UniversalCombAudioProcessor&);
+    UniversalCombFilterAudioProcessorEditor (UniversalCombFilterAudioProcessor&);
     ~UniversalCombFilterAudioProcessorEditor() override;
 
     //==============================================================================
@@ -35,7 +35,7 @@ public:
 private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
-    UniversalCombAudioProcessor& audioProcessor;
+    UniversalCombFilterAudioProcessor& audioProcessor;
     
     float delayInterval;
     

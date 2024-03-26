@@ -60,7 +60,7 @@ public:
 private:
     //==============================================================================
     juce::AudioBuffer<float> delayBuffer;
-    int delayBufferLength, delayRead, delayWrite;
+    int delayBufferLength, delayWrite;
     float samplePeriod, lfoPhase;
     
     juce::AudioParameterFloat* sweepWidth;

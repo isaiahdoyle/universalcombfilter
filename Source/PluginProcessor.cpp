@@ -33,7 +33,7 @@ UniversalCombFilterAudioProcessor::UniversalCombFilterAudioProcessor()
     addParameter(delay = new AudioParameterFloat("delay", "Minimum Delay", 0.0f, 0.5f, 0.0f));
     addParameter(tremolo = new AudioParameterBool("tremolo", "Tremolo", false));
     
-    delayRead = 0; delayWrite = 0;
+    delayWrite = 0;
 }
 
 UniversalCombFilterAudioProcessor::~UniversalCombFilterAudioProcessor()
